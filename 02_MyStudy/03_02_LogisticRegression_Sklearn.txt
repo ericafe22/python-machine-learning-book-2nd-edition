@@ -1,0 +1,13 @@
+
+# ロジスティック回帰
+
+from sklearn.linear_model import LogisticRegression
+
+★1対他の分類になるため、coef_で行(クラス数分) × 列(説明変数分)の出力になる
+lr = LogisticRegression(C=10, random_state=1)
+lr.fit(X_train_std, y_train)
+print("lr.coef_")
+print(lr.coef_)
+print("lr.coef_[1]")
+print(lr.coef_[1])
+
