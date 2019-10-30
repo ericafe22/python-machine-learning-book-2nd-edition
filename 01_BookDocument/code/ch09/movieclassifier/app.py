@@ -61,8 +61,8 @@ def results():
 
 @app.route('/thanks', methods=['POST'])
 def feedback():
-    feedback = request.form['feedback_button']
-    review = request.form['review']
+    feedback = request.form['feedback_button'] # Correct
+    review = request.form['review'] # Input Strings
     prediction = request.form['prediction']
 
     inv_label = {'negative': 0, 'positive': 1}
